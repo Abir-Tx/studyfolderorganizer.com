@@ -1,88 +1,297 @@
-<!--
-Main index file for the StudyFolderOrganizer Website. The website will be used for Downloading the SFO versions.
-
-Created By: Mushfiqur Rahman Abir
-Year: 2021
-LANG: HTML5
-HostedOn: http://studyfolderorganizer.unaux.com
--->
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Study Folder Organizer</title>
-	<!-- Matrerialize CDN -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
+  <title>Study Folder Organizer</title>
+  <meta charset="utf-8">
+  <meta name="description"
+    content="Mange your study folders in a easy and time saving way. A easy to use graphical app.">
+  <meta name="viewport" content="width=device-width">
+  <link rel="apple-touch-icon-precomposed" href="media/favicon.png">
+  <link rel="icon" href="media/favicon.png">
+  <link rel="mask-icon" href="media/favicon.svg" color="rgb(36,38,58)">
+  <link rel="shortcut icon" href="media/favicon.png">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
-	<div class="container">
-		<!-- Header Section -->
-		<div class="section">
-			<div class="row">
-				<div class="col s12 m12 l12">
-					<div class="header center-align">
-						<h1>
-							Study Folder Organizer
-						</h1>
-						<hr>
-					</div>
-				</div>
-			</div>
-		</div>
+<body class="page page-home preload">
 
-		<div class="section">
-			<div class="row">
-				<div class="col s12">
-					<div class="responsive-image center-align">
-						<img src="https://raw.githubusercontent.com/Abir-Tx/StudyFolderOrganizer/main/res/SFO_v2.ico"
-							alt="StudyFolderOrganizer Logo">
-					</div>
-					<br>
-					<span class="hover">
-						Study Folder Organizer is a software tool which helps students manage their study releted
-						files in a nice & structured way by creating folders. The folders gets created in a second in a
-						very organized way which will take a student a lot time to create manually.The software creates
-						the folders using year->semester->terms pattern for each subject. <b>Download the tool now to
-							start managing your study life</b>
-					</span>
-				</div>
-			</div>
-		</div>
+  <header class="header-main dark">
+    <nav>
+      <a href="index.html" class="logo" rel="home"><svg xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+          <path
+            d="M7.335 1.023l2.462.434a1 1 0 0 1 .811 1.159L8.004 17.388a2 2 0 0 1-2.317 1.622l-3.94-.694a1 1 0 0 1-.81-1.159L3.28 3.862a3.5 3.5 0 0 1 4.054-2.839zm7.039 3.272l7.878 1.39a1 1 0 0 1 .812 1.158l-1.997 11.325a5.5 5.5 0 0 1-6.372 4.461l-4.431-.78a1 1 0 0 1-.812-1.16l2.605-14.771a2 2 0 0 1 2.317-1.623z"
+            fill="currentColor" />
+        </svg><span>SFO</span></a>
+      <div class="nav-toggle"></div>
+      <ul class="inline">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="pricing.html">Download</a></li>
+        <!-- <li><a href="about.html">About</a></li> -->
+      </ul>
+      <!-- <ul class="inline right">
+        <li><a href="login.html">Log In</a></li>
+        <li><a href="signup.html" class="button button-secondary button-m full-width-tablet" role="button">Sign Up</a>
+        </li>
+      </ul> -->
+    </nav>
+  </header>
 
-		<!-- Downloads Section -->
-		<div class="section">
-			<div class="row">
-				<div class="col s6 m6 l6">
-					<a href="https://sourceforge.net/projects/studyfolderorganizer-gui/files/latest/download"><img
-							alt="Download StudyFolderOrganizer-GUI" src="https://a.fsdn.com/con/app/sf-download-button"
-							width=276 height=48
-							srcset="https://a.fsdn.com/con/app/sf-download-button?button_size=2x 2x"></a>
-				</div>
-				<div class="col s6">
-					<div class="btn">
-						<a class="white-text" target="_blank"
-							href="http://www.github.com/abir-tx/studyfolderorganizer-gui.git">View On
-							GitHub</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+  <main>
+
+    <section class="bg-image-hero center-tablet dark overlay-hero">
+      <div class="full-screen -margin-bottom middle padding padding-top-tablet">
+        <div class="row max-width-l">
+          <div class="col-one-half middle">
+            <div>
+              <h1 class="hero">Study Folder Organizer</h1>
+              <p class="lead">Smartly manage your digital study files & folders</p>
+              <a href="pricing.html" class="button button-primary space-top" role="button">Get Started</a>
+            </div>
+          </div>
+          <div class="col-one-half middle">
+            <img src="media/content/hero-illustration.png"
+              srcset="media/content/hero-illustration.png 1x, media/content/hero-illustration@2x.png 2x"
+              alt="Hero Illustration">
+          </div>
+        </div>
+      </div>
 
 
+      <div class="padding">
+        <div class="row margin-bottom max-width-l">
+          <div class="col-one-half middle">
+            <h3>One Click Folder Creation</h3>
+            <p class="paragraph">Create your study folders based on subject names & terms in a organized way in just one
+              click
+            </p>
+          </div>
+          <div class="col-one-half">
+            <img class="rounded shadow-l" src="media/content/editor.png"
+              srcset="media/content/editor.png 1x, media/content/editor@2x.png 2x" alt="Editor">
+          </div>
+        </div>
 
+        <div class="row max-width-l reverse-order">
+          <div class="col-one-half">
+            <img class="rounded shadow-l" src="media/content/sketch.png"
+              srcset="media/content/sketch.png 1x, media/content/sketch@2x.png 2x" alt="Sketch">
+          </div>
+          <div class="col-one-half middle">
+            <h3>Easy to understand & use designed interface</h3>
+            <p class="paragraph">SFO gives you to interact with it using a very easy to use and lightweight user
+              interface design</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	<!-- DarkMode Widget -->
-	<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
-	<script src="js/darkmode.js"></script>
-	<!-- Materialize JS CDN -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <section class="bg-gradient-light -margin-bottom-2 overlay padding">
+      <div class="center max-width-m">
+        <h2>Present Your Product</h2>
+        <p class="paragraph">Opalin helps you present your business in a wide variety of ways. Display full-width
+          images, divide content in a single or multiple columns, anything to make your product or service stand out!
+        </p>
+      </div>
+      <div class="margin-top max-width-l">
+        <img class="rounded shadow-l" src="media/content/opalin-dashboard.png"
+          srcset="media/content/opalin-dashboard.png 1x, media/content/opalin-dashboard@2x.png 2x"
+          alt="Opalin Dashboard">
+      </div>
+    </section>
+
+    <section class="bg-gradient-dark center dark padding">
+      <div class="margin-top max-width-l">
+        <div class="margin-bottom max-width-m">
+          <h3>Over 20,000 Paying Customers</h3>
+          <p class="opacity-m paragraph">Thousands of the most successful companies rely on our service.</p>
+        </div>
+        <div class="row min-two-columns">
+          <div class="col-one-fourth">
+            <img src="media/content/trusted-company-dark.png"
+              srcset="media/content/trusted-company-dark.png 1x, media/content/trusted-company-dark@2x.png 2x"
+              alt="Trusted Company">
+          </div>
+          <div class="col-one-fourth">
+            <img src="media/content/trusted-company-dark.png"
+              srcset="media/content/trusted-company-dark.png 1x, media/content/trusted-company-dark@2x.png 2x"
+              alt="Trusted Company">
+          </div>
+          <div class="col-one-fourth">
+            <img src="media/content/trusted-company-dark.png"
+              srcset="media/content/trusted-company-dark.png 1x, media/content/trusted-company-dark@2x.png 2x"
+              alt="Trusted Company">
+          </div>
+          <div class="col-one-fourth">
+            <img src="media/content/trusted-company-dark.png"
+              srcset="media/content/trusted-company-dark.png 1x, media/content/trusted-company-dark@2x.png 2x"
+              alt="Trusted Company">
+          </div>
+        </div>
+        <img class="margin-top rounded shadow-l" src="media/content/customers.jpg"
+          srcset="media/content/customers.jpg 1x, media/content/customers@2x.jpg 2x" alt="Customers">
+      </div>
+    </section>
+
+    <section class="padding">
+      <div class="max-width-l">
+        <div class="center">
+          <h2>Timeline</h2>
+          <p class="paragraph">The best stories are told from start to finish, that's why we keep track of history.</p>
+        </div>
+        <div class="row margin-top timeline">
+          <div class="col-one-fourth">
+            <h5>Research</h5>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+          </div>
+          <div class="col-one-fourth">
+            <h5>Ideation</h5>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+              mollit.</p>
+          </div>
+          <div class="col-one-fourth">
+            <h5>Development</h5>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+              laborum.</p>
+          </div>
+          <div class="col-one-fourth">
+            <h5>Launch</h5>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-light center">
+      <div class="row no-gutter">
+        <div class="col-one-half middle padding padding-bottom padding-top">
+          <div class="max-width-m">
+            <p class="paragraph">Danielle Mayer, business owner, says:</p>
+            <h3>"Support is fantastic. Nothing but great results!"</h3>
+          </div>
+        </div>
+        <div class="col-one-half bg-image-03 padding-bottom padding-top"></div>
+      </div>
+    </section>
+
+    <section class="bg-gradient-light padding">
+      <div class="center max-width-l">
+        <h2>5-Minute Setup</h2>
+        <p class="paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus.</p>
+      </div>
+      <div class="row margin-top max-width-l">
+        <div class="col-one-fourth card card-content">
+          <p class="muted">Step 1</p>
+          <h4>Download</h4>
+          <p class="paragraph">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.</p>
+        </div>
+        <div class="col-one-fourth card card-content">
+          <p class="muted">Step 2</p>
+          <h4>Customize</h4>
+          <p class="paragraph">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur mollit.</p>
+        </div>
+        <div class="col-one-fourth card card-content">
+          <p class="muted">Step 3</p>
+          <h4>Upload</h4>
+          <p class="paragraph">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.</p>
+        </div>
+        <div class="col-one-fourth card card-content dark">
+          <p class="muted">Step 4</p>
+          <h4>Done!</h4>
+          <p class="paragraph">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+            laudantium.</p>
+        </div>
+      </div>
+      <div class="center margin-top max-width-l">
+        <span class="muted">If you need any help, make sure to </span><a href="signup.html">book a demo</a><span
+          class="muted">.</span>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer-main bg-gradient-primary dark overlay-shape-06">
+    <div class="padding">
+      <div class="center margin-bottom max-width-m">
+        <h3>Grow your startup the right way.</h3>
+        <p class="paragraph">Our tools are packed with epic features. So you can focus on your most important work.</p>
+      </div>
+      <div class="center margin-bottom max-width-l">
+        <div class="row margin-bottom min-two-columns">
+          <div class="col-one-fourth">
+            <i class="feature-icons material-icons bg-gradient-pink">format_shapes</i>
+            <h6>Minimal Design</h6>
+          </div>
+          <div class="col-one-fourth">
+            <i class="feature-icons material-icons bg-gradient-cyan">network_check</i>
+            <h6>Rocket Fast</h6>
+          </div>
+          <div class="col-one-fourth">
+            <i class="feature-icons material-icons bg-gradient-green">line_style</i>
+            <h6>Framework</h6>
+          </div>
+          <div class="col-one-fourth">
+            <i class="feature-icons material-icons bg-gradient-indigo">check</i>
+            <h6>HTML5 Valid</h6>
+          </div>
+        </div>
+      </div>
+      <div class="card card-content dark margin-bottom max-width-l">
+        <form class="row reduce-spacing">
+          <div class="col-two-thirds center-tablet middle">
+            <h3 class="space-none">Ready to get started?</h3>
+            <p class="paragraph">Start your free 15-day trial today.</p>
+          </div>
+          <div class="col-one-third middle">
+            <a href="signup.html" class="button button-primary" role="button">Create An Account</a>
+          </div>
+        </form>
+      </div>
+      <div class="row center-desktop max-width-l">
+        <div class="col-two-fifths">
+          <h6>Opalin ®</h6>
+          <p>We're a completely remote company, working across twenty countries with over 20,000 customers.</p>
+        </div>
+        <div class="col-one-fifth">
+          <h6>Info</h6>
+          <ul class="blank">
+            <li><a href="#">Getting Started</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Design</a></li>
+            <li><a href="#">Tutorials</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="col-one-fifth">
+          <h6>Support</h6>
+          <ul class="blank">
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Requirements</a></li>
+            <li><a href="#">License</a></li>
+            <li><a href="#">Updates</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-one-fifth">
+          <h6>Connect</h6>
+          <ul class="blank">
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Medium</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p class="copyright"><span>HTML Template by </span><a href="https://uiuxassets.com/" target="_blank">UI/UX
+        Assets</a><span> - © 2018, all rights reserved.</span></p>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>
