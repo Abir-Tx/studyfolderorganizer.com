@@ -1,0 +1,8 @@
+.badge-container {
+	/* width: 500px; */
+	/* height: 250px; */
+	/* margin: 50px; */
+	/* outline: solid 1px black; */
+	display: flex;
+	justify-content: center;
+}
