@@ -1,0 +1,9 @@
+.badge-container {
+	display: flex;
+	justify-content: center;
+
+}
+
+.sf-root {
+	width: 125px;
+}
